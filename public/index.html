@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-container">
+            <input type="text" id="username" placeholder="username">
+            <button type="submit" class="btn" id="btn">Submit</button>
+    </div>
+    <div class="chat-container">
+        <div class="header-conversation">
+            <div class="lefthead">
+                <span class="material-symbols-outlined">arrow_back</span>
+                <span class="material-symbols-outlined">account_circle</span>
+                <span class="username-text" id="user-header">Animesh Karne</span>
+            </div>
+            <div class="righthead">
+                <span class="material-symbols-outlined">videocam</span>
+                <span class="material-symbols-outlined">call</span>
+                <span class="material-symbols-outlined">more_vert</span>
+            </div>
+
+        </div>
+        <div class="message-container">
+            <div class="message sent">hi</div>
+            <div class="message receive">hello</div>
+            <div class="message receive">how are you </div>
+            <div class="message sent">fine </div>
+            <div class="message sent">Do You attend yesterdays lecture , I want notes of that</div>
+            <div class="message receive">yes sure , actually the lecture was quite impressive , i must say</div>
+           
+        </div>
+        <div class="send-message">
+            <input type="text" id="send-message-input" placeholder="Message">
+            <button id="send-btn">
+                <span class="material-symbols-outlined">send</span>
+            </button>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
